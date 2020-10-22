@@ -6,19 +6,19 @@ class Chart extends Component{
     super(props);
     this.state = {
       chartData:{
-        labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+        labels: ['Dog', 'Cat', 'Bird', 'Fish', 'Turtle', 'Rabbit'],
         datasets: [
           {
-            label: 'Population',
+            label: 'October Sales',
             data:[
-                617594,
-                181045,
-                153060,
-                106519,
-                105162,
-                95072
+                61,
+                50,
+                20,
+                30,
+                9,
+                15
             ],
-            backgroundColor:[
+            /*backgroundColor:[
                 'rgba(255, 99, 132, 0.6)',
                 'rgba(54, 162, 235, 0.6)',
                 'rgba(255, 206, 86, 0.6)',
@@ -26,7 +26,7 @@ class Chart extends Component{
                 'rgba(153, 102, 255, 0.6)',
                 'rgba(255, 159, 64, 0.6)',
                 'rgba(255, 99, 132, 0.6)'
-            ]
+            ]*/
           }
         ]
       }
@@ -41,42 +41,12 @@ class Chart extends Component{
             options={{
               title:{
                 display:true,
-                text:'Largest Cities In Massachusetts',
+                text:'October Sales',
                 fontSize:25
               },
               legend:{
                 display:true,
-                position:'bottom'
-              }
-            }}
-        />
-
-        <Pie
-            data={this.state.chartData}
-            options={{
-              title:{
-                display:true,
-                text:'Largest Cities In Massachusetts',
-                fontSize:25
-              },
-              legend:{
-                display:true,
-                position:'bottom'
-              }
-            }}
-        />
-
-        <Polar
-            data={this.state.chartData}
-            options={{
-              title:{
-                display:true,
-                text:'Largest Cities In Massachusetts',
-                fontSize:25
-              },
-              legend:{
-                display:true,
-                position:'bottom'
+                position:'right'
               }
             }}
         />
