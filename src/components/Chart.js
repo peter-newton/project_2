@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Bar, Pie, Polar } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 class Chart extends Component{
   constructor(props) {
@@ -41,7 +41,7 @@ class Chart extends Component{
             options={{
               title:{
                 display:true,
-                text:'October Sales',
+                text:'Popular Pets',
                 fontSize:25
               },
               legend:{
